@@ -1,0 +1,515 @@
+/* -------------------------------  Font import -------------------------------  */
+@font-face {
+    font-family: 'MarkOT-Bold';
+    src: url('Assets/Fonts/MarkOT-Bold.otf');
+}
+
+@font-face {
+    font-family: 'MarkOT-Book';
+    src: url('Assets/Fonts/MarkOT-Book.otf');
+}
+
+@font-face {
+    font-family: 'MarkOT-Regular';
+    src: url('Assets/Fonts/MarkOT-Regular.otf');
+}
+
+@font-face {
+    font-family: 'MarkOT-Thin';
+    src: url('Assets/Fonts/MarkOT-Thin.otf');
+}
+
+@font-face {
+    font-family: 'MarkOT';
+    src: url('Assets/Fonts/MarkOT.otf');
+}
+
+/* ------------------------------- START - Navigation bar style ------------------------------- */
+.navbar {
+    background-color: #85C5B9;
+}
+
+.navbar-toggler{
+    border: none;         /*Removes border around bootstrap icon wrapper*/
+}
+
+
+.nav-item a {
+    color: #fff;        /* Nav links color */
+}
+
+.nav-item a:hover {
+    color: #DADADA;     /* ON HOVER: Nav links color */
+}
+
+.nav-link{
+    text-align: center;
+}
+/* ------------------------------- END - Navigation bar style ------------------------------- */
+
+
+/* -------------------------------  START - Section 1 Image style -------------------------------  */
+
+/* containerImg style for banner */
+.containerImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* containerImg style for banner with img tag */
+.containerImg img {
+    width: 100%;    /*This stretches photo to full width of screen*/
+    bottom:0;
+}
+
+/* Styling for the text button wrapper */
+.textButtonWrap {
+    transition: all 0.3s ease-in-out; 
+}
+
+
+/* container for text */
+.textWrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; 
+}
+
+/* text div with heading and paragraph style */
+.text {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    margin: 100px;
+    height: auto;
+    width: 90%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.25);      /*Same as in FIGMA*/
+}
+
+/* Adjust text font */
+.text h1 {
+    font-family: MarkOT-Book;
+}
+.text p {
+    font-family: MarkOT-Regular;
+}
+
+
+/* container button styles */
+.btnWrap {
+    position: relative;
+    width: 100%;
+    display: flex;              /*To have horizontal display content of button*/
+    align-items: center;
+    justify-content: center;    /*Aligns button to center*/
+    transition: all 0.3s ease-in-out; 
+}
+
+/* button style */
+.btnStyle {
+    position: absolute;
+    border: none;
+    bottom: 30px;
+    background-color: #D38E8D;
+    width: 90%;
+    height: 45px;
+    font-family: 'MarkOT-Bold';
+    transition: all 0.3s ease-in-out; 
+}
+/* ------------------------------- END - Section 1 Image style ------------------------------- */
+
+
+
+/* ------------------------------- START- Section 2 Image style ------------------------------- */
+/* As per FIGMA, change text color for Section */
+#section2, #section3, #section4 {
+    color: #535353;
+    font-family: MarkOT-Regular;
+    font-size: 1.2em;
+}
+/* Making images responsive */
+.img-fluid {
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set image height to 100%  */
+}
+
+
+#section2 .spanGreen {
+    color: #47929C;
+    font-family: MarkOT-Bold;
+}
+
+/* Bold text */
+.txtBold {
+    font-weight: bold;
+}
+
+
+/* Section Heading Style */
+.sectionHeading {
+    font-family: MarkOT-Book;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #47929C;
+}
+
+/* 2nd column in section 2 = padding for text */
+.section2Col {
+    padding: 5%;
+}
+
+.btnWrap2 {
+    position: relative;
+    width: 100%;
+    display: flex;              /*To have horizontal display content of button*/
+    align-items: center;
+    justify-content: center;    /*Aligns button to center*/
+    transition: all 0.3s ease-in-out; 
+    margin: 30px 0;
+}
+
+.btnStyle2 {
+        bottom: 0;      /* From Bottom, push to top */
+        position: relative;
+        border: none;
+        background-color: #D38E8D;
+        width: 90%;
+        height: 45px;
+        font-family: 'MarkOT-Bold';
+        transition: all 0.3s ease-in-out; 
+        margin-top: 4%;
+}
+
+/* ------------------------------- END - Section 2 Image style -------------------------------*/
+
+/* ------------------------------- START - FAQs Style -------------------------------*/
+/* Flexbox layout for the dropdown section */
+#section5, .section5 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+#section5 > *:not(:last-child), .section5 > *:not(:last-child) {
+    position: static;
+    z-index: auto;
+}
+
+#section5 > :last-child, .section5 > :last-child {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.dropdown-content {
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+    /* border: 1px solid #c4c4c4;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%; 
+    margin-left: 6%;
+    margin-right: 0;
+    width: calc(100vw - 12%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styling for the dropdown heading */
+.dropdown-heading, .dropdown-content p {
+    margin: 0; /* Remove default margin */
+    width: 100%;
+    color: #47929C;
+    
+}
+
+/* Styling for the dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Styling for the dropdown toggle button */
+.dropdown button {
+    width: auto; /* Set width to auto */
+    text-align: right;
+}
+
+/* Styling for the dropdown icon */
+.dropdown-icon {
+    width: 20px; /* Set the width of the icon */
+    height: 20px; /* Set the height of the icon */
+}
+
+/* Hide the default dropdown arrow */
+.dropdown button.dropdown-toggle::after {
+    display: none;
+}
+
+/* Horizontal break line style */
+.hr-dropdown {
+    width: 78%; /* Make the horizontal line span the width of the dropdown content */
+    border-top: 2px solid #c4c4c4; /*Color same as in FIGMA*/
+    margin: 0 12%;
+    padding-bottom:2%;
+}
+
+
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001; /* Ensure the dropdown menu appears above the dropdown content */
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Background color of the dropdown menu */
+    border: 1px solid #c4c4c4; /* Border around the dropdown menu */
+    border-top: none; /* Hide top border to align with dropdown content */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: normal;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+}
+
+/* Animation on hover */
+.btnStyle2:hover, .btnStyle:hover {
+    transform: scale(1.05); /* Scale up by 5% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////// MEDIA QUERIES ////////////////////////////////////////////////////////////// */
+/* For mobile phone screen */
+@media screen and (max-width: 768px) {
+    .containerImg img {
+        max-height: 850px;
+    }
+
+        /* Adjust button font-size */
+    .btnStyle2, .btnStyle{
+        font-size: 16px;
+    }
+
+
+    /* FAQs button style -  Responsive */
+    #btnFaq {
+        margin-left: 5%;
+    }
+}
+
+/* For tablet screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .containerImg img {
+        max-height: 1000px;
+    }
+
+    /* Adjust button font-size */
+    .btnStyle2, .btnStyle{
+        font-size: 16px;
+    }
+
+    /* Section Heading Style */
+    .sectionHeading {
+        font-size: 1.8rem;
+    }
+
+                    /* ///////////////////////FAQs Adjust style /////////////////////// */
+    .dropdown-content {
+        padding: 0 30%;
+    }
+
+    .hr-dropdown{
+        width: 29%;
+        border-top: 2px solid #c4c4c4;
+        margin: 0 36%;
+        padding-bottom:2%;
+    }
+
+    /* FAQs button style -  Responsive */
+    #btnFaq {
+        width: 22%;
+        margin-left: -1%;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+}
+
+/* For screens like larger tablets and small desktops */
+@media screen and (min-width: 993px) and (max-width: 1600px) {
+        /* ------------------------------- START - Section 1 Image style -------------------------------*/
+    .containerImg img {
+         max-height: 1200px;
+    }
+
+       /* Adjust wrap style for text and button together */
+   .textButtonWrap{
+        width: 30%;
+        justify-content: flex-end; /* Adjusted to flex-end */
+        position: absolute; /* Added */
+        left: 66%;           /*Position to right hand side*/ 
+    }
+
+    .btnStyle {
+        width: 85%;         /* Shrink button width compared to text container */
+        height: 60px;       /* Adjust height of button */
+        bottom: 135px;      /* From Bottom, push to top */
+        margin-bottom: -30px;
+        font-size: 24px;   
+    }
+
+        /* Text h1 & p push from bottom */
+    .text {
+        margin-bottom: 190px;
+    }
+
+    /* Adjust Text font */
+    .text h1{
+        font-size: 1.9rem;
+    }
+    .text p {
+        font-size: 1em;
+    }
+    /* ------------------------------- END - Section 1 Image style -------------------------------*/
+
+    /* ------------------------------- START - Section 2 Image style -------------------------------*/
+    #section2, #section3, #section4 {
+        font-size: 1.4em;
+    }
+
+    .sectionHeading {
+        font-size: 2.5rem;
+    }
+    .btnStyle2 {
+        height: 60px;
+        bottom: -20px;
+        width: 80%;
+        font-family: 'MarkOT-Bold';
+        font-size: 24px;
+    }
+
+    .section2Col {
+        padding: 5%;
+    }
+/* ------------------------------- END - Section 2 Image style -------------------------------*/
+
+    /* ///////////////////////FAQs Adjust style /////////////////////// */
+    .dropdown-content {
+        padding: 0 30%
+    }
+
+    .hr-dropdown{
+        width: 29%;
+        border-top: 2px solid #c4c4c4;
+        margin: 0 36%;
+        padding-bottom:2%;
+        
+    }
+
+    /* FAQs button style -  Responsive */
+    #btnFaq {
+        width: 25%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+}
+
+/* For screens, larger desktops */
+@media screen and (min-width: 1601px) {
+    /* ------------------------------- START- Section 1 Image style -------------------------------*/
+    .containerImg img {
+        max-height: 1500px;
+   }
+
+   /* Adjust wrap style for text and button together */
+   .textButtonWrap{
+        width: 30%;
+        justify-content: flex-end; /* Adjusted to flex-end */
+        position: absolute; /* Added */
+        left: 66%;           /*Position to right hand side*/ 
+    }
+
+
+   .btnStyle {
+        width: 85%;         /* Shrink button width compared to text container */
+        height: 60px;       /* Adjust height of button */
+        bottom: 300px;      /* From Bottom, push to top */
+        margin-bottom: -30px;
+        font-size: 28px;        
+    }
+
+    /* Text h1 & p push from bottom */
+    .text {
+        margin-bottom: 350px;
+    }
+
+    /* Adjust Text font */
+    .text h1{
+        font-size: 3.5rem;
+    }
+    .text p {
+        font-size: 1.8em;
+    }
+/* ------------------------------- END - Section 1 Image style -------------------------------*/
+
+
+/* ------------------------------- START - Section 2 Image style -------------------------------*/
+    #section2, #section3, #section4 {
+        font-size: 2.1em;
+    }
+
+    .sectionHeading {
+        font-size: 2.6em;
+    }
+    .btnStyle2 {
+        height: 60px;
+        bottom: -20px;
+        width: 60%;
+        font-family: 'MarkOT-Bold';
+        font-size: 28px;
+    }
+
+    .section2Col {
+        padding: 4%;
+    }
+/* ------------------------------- END - Section 2 Image style -------------------------------*/
+
+    /* ///////////////////////FAQs Adjust style /////////////////////// */
+    .dropdown-content {
+        padding: 0% 30%;
+    }
+
+    .hr-dropdown{
+        width: 30%;
+        border-top: 2px solid #c4c4c4;
+        margin: 0 36%;
+        padding-bottom:2%;
+    }
+
+    /* FAQs button style -  Responsive */
+    #btnFaq {
+        width: 24%;
+        margin-left: 2%;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+}
