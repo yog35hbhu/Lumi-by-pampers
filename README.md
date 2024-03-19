@@ -6,7 +6,7 @@
 - [Project Overview](#project-overview)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
-
+- [Performance](#Performance-optimisation)
 ## Project Overview
 
 Landing page for "Lumi by Pampers"
@@ -31,3 +31,7 @@ Explain how to set up and run the project locally. If there are any dependencies
 Technologies used: HTML, CSS, JavaScript, Bootstrap.
 
 Bootstrap is a CSS Framework for developing responsive and mobile-first websites.  It comes with a wide range of pre-styled UI components. There are communities and documentation that ease use of Bootstrap.
+
+##Performance-optimisation
+Different image size and pixels are used to render differently depending on screen size.
+The images for small screens are lighter than the one for desktop.
